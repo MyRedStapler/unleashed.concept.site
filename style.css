@@ -1,0 +1,289 @@
+body,
+html {
+    margin: auto 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+ /* font-family: 'Metal Mania', sans-serif;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; */
+}
+
+html {
+    position: relative;
+}
+
+.navbar {
+    z-index: 2000;
+}
+
+.navbar-brand {
+    font-family: 'Metal Mania', cursive;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/* ----- FLEX CONTAINERS ----- */
+
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 95vh;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25vh;
+}
+
+.main-nav {
+    display: flex;
+    list-style: none;
+    font-size: 0.4em;
+    margin: 10;
+    font-family: arial;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+}
+
+.pg-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10vh;
+    height: 33vh;
+    font-family: 'Prosto One', cursive;
+}
+
+.pg-banner {
+    display: flex;
+    font-family: 'Prosto One', cursive;
+    margin-top: 10vh;
+    height: 10vh;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+/* ----- END FLEX CONTAINER DEFINITIONS -----  */
+
+.home-btn {
+    width: 200px;
+    margin-left: 15px;
+}
+
+.home-btn:hover {
+    border-width: 4px;
+}
+
+.home-card {
+    width: 50%;
+    background-color: rgb(188, 186, 186);
+    opacity: 60%;
+    color: #601d1d;
+    font-family: 'Prosto One', cursive;
+}
+
+/* --- GRID CONTAINERS --- */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.alt-grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 10px;
+    padding-top: 0;
+}
+
+.press-grid-container {
+    display: grid;
+    grid-template-columns: 30%, repeat(2, 1fr), 30%;
+    gap: 20px;
+    margin-top: 10px;
+    padding-top: 0;
+}
+
+.gal-grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 40px;
+}
+
+/* -----  END GRID CONTAINERS ----- */
+
+footer {
+    text-align: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.bkgd-static-image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.social {
+    height: 24px;
+    width: 24px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.social:hover {
+    border-width: 4px;
+    border-color: rgb(155, 152, 152);
+}
+
+.zone {
+    /*padding:30px 50px;
+    margin:40px 60px;*/
+    cursor:pointer;
+    /*display:inline-block;*/
+    color:#FFF;
+    font-size:2em;
+    border-radius:4px;
+    border:1px solid #bbb;
+    transition: all 0.3s linear;
+    align-items: center;
+    justify-content: center;
+}
+
+.pitch {
+    font-family: 'Prosto One', cursive;
+    font-size: 1.75rem;
+    color: rgb(63, 7, 7);
+    padding-left: 20%;
+    padding-right: 20%;
+    text-align:center;
+    text-decoration: none;
+}
+
+.pitch-link {
+    font-family: 'Prosto One', cursive;
+    font-size: 1.75rem;
+    color: rgb(63, 7, 7);
+    text-decoration: none;  
+}
+
+@media only screen and (max-width: 800px) {
+    .pitch {
+        font-size: 1em;
+    }
+
+    .pitch-link {
+        font-size: 1.25em;
+    }
+}
+
+.figure-caption {
+    color:#000000;
+}
+
+.card-title {
+    text-align: center;
+}
+
+.card-text {
+    text-align: center;
+}
+
+/*BACKGROUND AND BACKGROUND GRADIENTS*/
+/***********************************************************************
+ *  Transparent Background
+ **********************************************************************/
+ .transparent {
+    background: transparent;
+}
+
+/***********************************************************************
+ *  Green Background
+ **********************************************************************/
+.green{
+    background: #56B870; /* Old browsers */
+    background: -moz-linear-gradient(top, #56B870 0%, #a5c956 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#56B870), color-stop(100%,#a5c956)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #56B870 0%,#a5c956 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #56B870 0%,#a5c956 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #56B870 0%,#a5c956 100%); /* IE10+ */
+    background: linear-gradient(top, #56B870 0%,#a5c956 100%); /* W3C */
+}
+
+/***********************************************************************
+ *  Red Background
+ **********************************************************************/
+.red{
+    background: #C655BE; /* Old browsers */
+    background: -moz-linear-gradient(top, #C655BE 0%, #cf0404 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#C655BE), color-stop(100%,#cf0404)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #C655BE 0%,#cf0404 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #C655BE 0%,#cf0404 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #C655BE 0%,#cf0404 100%); /* IE10+ */
+    background: linear-gradient(top, #C655BE 0%,#cf0404 100%); /* W3C */
+}
+
+/***********************************************************************
+ *  Yellow Background
+ **********************************************************************/
+.yellow{
+    background: #F3AAAA; /* Old browsers */
+    background: -moz-linear-gradient(top, #F3AAAA 0%, #febf04 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#F3AAAA), color-stop(100%,#febf04)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* IE10+ */
+    background: linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* W3C */
+}
+
+/***********************************************************************
+ *  Blue Background
+ **********************************************************************/
+.blue{
+    background: #7abcff; /* Old browsers */
+    background: -moz-linear-gradient(top, #7abcff 0%, #60abf8 44%, #4096ee 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7abcff), color-stop(44%,#60abf8), color-stop(100%,#4096ee)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* IE10+ */
+    background: linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* W3C */
+}
+
+/***********************************************************************
+ *  Black Background
+ **********************************************************************/
+.black{
+    background: #000000; /* Old browsers */
+    background: -moz-linear-gradient(top, #000000 0%, #000000 44%, #000000 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#000000), color-stop(44%,#000000), color-stop(100%,#000000)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #000000 0%,#000000 44%,#000000 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #000000 0%,#000000 44%,#000000 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #000000 0%,#000000 44%,#000000 100%); /* IE10+ */
+    background: linear-gradient(top, #000000 0%,#000000 44%,#000000 100%); /* W3C */
+}
