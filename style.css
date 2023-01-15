@@ -1,10 +1,13 @@
 body,
 html {
     margin: auto 0;
+    border: 0;
   width: 100%;
   height: 100%;
-  padding: 0;
- /* font-family: 'Metal Mania', sans-serif;
+padding-top: 4%;
+overflow: auto;
+ /*     padding: 0;
+font-family: 'Metal Mania', sans-serif;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -17,6 +20,7 @@ html {
 
 .navbar {
     z-index: 2000;
+    opacity: 90%;
 }
 
 .navbar-brand {
@@ -42,7 +46,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 25vh;
+    height: 44vh;
 }
 
 .main-nav {
@@ -58,26 +62,25 @@ html {
 
 .logo {
     display: flex;
+    padding-top: 0;
     align-items: center;
     justify-content: center;
-    height: 70vh;
+    height: 40vh;
 }
 
 .pg-title {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 10vh;
-    height: 33vh;
-    font-family: 'Prosto One', cursive;
+    /* margin-top: .1vh; */
+    height: 15vh;
 }
 
 .pg-banner {
-    display: flex;
+    /* display: flex; */
     font-family: 'Prosto One', cursive;
-    margin-top: 10vh;
-    height: 10vh;
-    align-items: center;
+    height: .1vh; 
+    align-items: flex-start;
     align-content: center;
     justify-content: center;
 }
